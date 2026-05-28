@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MainGo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="brand">
+      <div class="pineapple" aria-hidden="true">🍍</div>
+      <h1>MainGo</h1>
+    </header>
+
+    <aside class="bridge-callout" aria-label="What MainGo is">
+      <span class="bridge-icon" aria-hidden="true">🌉</span>
+      <p class="bridge-line">
+        Two shores, one river — <strong>take the bridge.</strong> One tap lands you on their app, vibe queued.
+      </p>
+    </aside>
+
+    <p class="privacy">Zero sign-in · no APIs · no tracking — each burst rolls a fresh search phrase for max variety</p>
+
+    <div class="picker-split" aria-label="Service and genre">
+      <div
+        class="chip-panel"
+        role="group"
+        aria-labelledby="svc-heading"
+        data-picker-group="service"
+      >
+        <div class="chip-panel-head" id="svc-heading">
+          <span class="chip-panel-title">Deck</span>
+          <span class="chip-panel-tag">A</span>
+        </div>
+        <div class="chip-wrap" id="serviceChips">
+          <button type="button" class="chip chip-mix" data-value="random" aria-pressed="true" title="Surprise service">🎲 Mix</button>
+          <button type="button" class="chip" data-value="spotify" aria-pressed="false" title="Spotify">🎵 Spot</button>
+          <button type="button" class="chip" data-value="pandora" aria-pressed="false" title="Pandora">📻 Pan</button>
+          <button type="button" class="chip" data-value="youtube" aria-pressed="false" title="YouTube">▶ YT</button>
+          <button type="button" class="chip" data-value="youtube_music" aria-pressed="false" title="YouTube Music">🎧 YT Mus</button>
+          <button type="button" class="chip" data-value="apple" aria-pressed="false" title="Apple Music">🍎 Apple</button>
+        </div>
+      </div>
+
+      <div class="split-gutter" aria-hidden="true">
+        <span class="split-gutter-line"></span>
+        <span class="split-gutter-emoji">×</span>
+        <span class="split-gutter-line"></span>
+      </div>
+
+      <div
+        class="chip-panel"
+        role="group"
+        aria-labelledby="genre-heading"
+        data-picker-group="genre"
+      >
+        <div class="chip-panel-head" id="genre-heading">
+          <span class="chip-panel-title">Vibe</span>
+          <span class="chip-panel-tag">B</span>
+        </div>
+        <div class="chip-wrap" id="genreChips">
+          <button type="button" class="chip chip-mix" data-value="random" aria-pressed="true" title="Surprise genre">🎲 Mix</button>
+          <button type="button" class="chip" data-value="chill" aria-pressed="false">Chill</button>
+          <button type="button" class="chip" data-value="lofi" aria-pressed="false">Lo-fi</button>
+          <button type="button" class="chip" data-value="rock" aria-pressed="false">Rock</button>
+          <button type="button" class="chip" data-value="metal" aria-pressed="false">Metal</button>
+          <button type="button" class="chip" data-value="reggae" aria-pressed="false">Reggae</button>
+          <button type="button" class="chip" data-value="hiphop" aria-pressed="false">Hip-hop</button>
+          <button type="button" class="chip" data-value="electronic" aria-pressed="false">Electro</button>
+          <button type="button" class="chip" data-value="classical" aria-pressed="false">Classical</button>
+          <button type="button" class="chip" data-value="jazz" aria-pressed="false">Jazz</button>
+          <button type="button" class="chip" data-value="latino" aria-pressed="false">Latino</button>
+          <button type="button" class="chip" data-value="reggaeton" aria-pressed="false">Reggaetón</button>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" id="playBurst" class="burst-launch" aria-label="GoGo Maingo Burst — open search in new tab">
+      <span class="burst-launch-inner">
+        <span class="burst-launch-pine" aria-hidden="true">🍍</span>
+        <span class="burst-launch-text">GoGo Maingo Burst</span>
+      </span>
+    </button>
+
+    <p class="footer">Panel stays open until you close it · each burst reuses one tab (close that tab to start fresh).</p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
