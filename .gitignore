@@ -1,0 +1,8 @@
+# Chrome extension pack output (local dev / automation only)
+MainGo.crx
+MainGo.pem
+
+# Accidental root-level npm installs (extension has no package.json)
+node_modules/
+package-lock.json
+package.json
